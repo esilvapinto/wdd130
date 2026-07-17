@@ -10,53 +10,78 @@ body {
     line-height: 1.5;
     color: #222;
     background: #fff;
-    margin: 0;
+    padding: 20px;
+    /* Adiciona respiro geral na página */
 }
 
 nav {
     background-color: steelblue;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 nav a {
     color: white;
     padding: 10px;
     display: block;
+    text-decoration: none;
 }
 
 main {
     max-width: 840px;
+    margin: 0 auto;
+    /* Centraliza o conteúdo */
 }
 
 h1 {
     color: steelblue;
+    margin-bottom: 1rem;
 }
 
 main img {
     float: right;
-    /* Adicionado para mover para a direita */
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    margin-left: 20px;
+    /* Afasta o texto da imagem */
+    margin-bottom: 10px;
 }
 
 p {
-    padding: 0;
+    margin-bottom: 1rem;
+}
+
+/* Ajustes para a lista */
+ul {
+    margin-left: 2rem;
+    /* Afasta da margem esquerda */
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    /* Separa os itens da lista */
 }
 
 aside {
     width: 20em;
     text-align: center;
     position: relative;
-    /* Necessário para o posicionamento absoluto do h2 */
+    margin: 20px auto;
+    /* Centraliza o aside */
 }
 
 aside h2 {
     position: absolute;
     top: 47px;
     left: 150px;
+    background: rgba(255, 255, 255, 0.7);
+    /* Adiciona fundo para leitura */
+    padding: 5px;
 }
 
 aside img {
@@ -65,16 +90,18 @@ aside img {
 }
 
 footer {
-    margin-top: 1em;
+    margin-top: 2em;
     border-top: 1px solid #000;
     text-align: center;
+    padding-top: 10px;
 }
 
 /* Seletores de Classe */
 .caixa {
-    margin: 1rem;
+    margin: 1rem 0;
+    /* Margem superior e inferior, 0 nas laterais */
     border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #ddd;
     color: #000;
 }
