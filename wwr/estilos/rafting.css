@@ -1,0 +1,174 @@
+:root {
+    --cor-primaria: #0B4F6C;
+    --cor-secundaria: #01BAEF;
+    --cor-destaque: #20BF55;
+    --cor-clara: #FFFFFF;
+    --cor-fundo: #F4F4F4;
+
+    --fonte-titulo: Georgia, serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-body);
+    color: var(--cor-primaria);
+    background-color: var(--cor-fundo);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   CABEÇALHO
+=========================== */
+
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+header img {
+    width: 150px;
+    float: left;
+}
+
+nav {
+    float: right;
+    margin-top: 55px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* ===========================
+   TÍTULOS
+=========================== */
+
+h1,
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+section,
+article,
+p {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero {
+    position: relative;
+}
+
+.hero img:first-child {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 15px;
+    background: rgba(11, 79, 108, .75);
+    color: white;
+}
+
+.hero article {
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+
+    background: rgba(255, 255, 255, .88);
+
+    border: 1px solid #ccc;
+}
+
+.hero article img {
+    float: right;
+    width: 100px;
+    margin-left: 15px;
+    border: 1px solid #999;
+}
+
+/* ===========================
+   HISTÓRIA
+=========================== */
+
+section {
+    margin-top: 30px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+}
+
+section p {
+    text-align: justify;
+}
+
+/* ===========================
+   GALERIA
+=========================== */
+
+section img {
+    width: 180px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+/* ===========================
+   RODAPÉ
+=========================== */
+
+footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+}
+
+footer p {
+    float: left;
+}
+
+.redes-sociais {
+    float: right;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+}
+
+.redes-sociais img {
+    width: 32px;
+    margin-left: 10px;
+}
