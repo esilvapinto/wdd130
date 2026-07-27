@@ -1,10 +1,12 @@
-/* ==========================================
-   River Rush Adventures
-   WDD130 - BYU
-========================================== */
+/*
+==========================================
+River Rush Adventures
+WDD130 - BYU
+==========================================
+*/
 
 /* ==========================
-   VARIÁVEIS
+VARIÁVEIS
 ========================== */
 
 :root {
@@ -14,13 +16,17 @@
     --cor-clara: #FFFFFF;
     --cor-fundo: #F4F4F4;
     --cor-texto: #333333;
+    --cor-borda: #CCCCCC;
+
+    --fundo-transparente: rgba(11, 79, 108, 0.80);
+    --branco-transparente: rgba(255, 255, 255, 0.90);
 
     --fonte-titulo: Georgia, serif;
     --fonte-corpo: Arial, Helvetica, sans-serif;
 }
 
 /* ==========================
-   RESET
+RESET
 ========================== */
 
 * {
@@ -30,7 +36,7 @@
 }
 
 /* ==========================
-   BODY
+BODY
 ========================== */
 
 body {
@@ -40,7 +46,7 @@ body {
 }
 
 /* ==========================
-   LAYOUT
+LAYOUT
 ========================== */
 
 header,
@@ -51,7 +57,7 @@ footer {
 }
 
 /* ==========================
-   HEADER
+HEADER
 ========================== */
 
 header {
@@ -67,7 +73,7 @@ header img {
 }
 
 /* ==========================
-   NAVEGAÇÃO
+NAVEGAÇÃO
 ========================== */
 
 nav {
@@ -87,7 +93,7 @@ nav a:hover {
 }
 
 /* ==========================
-   TÍTULOS
+TÍTULOS
 ========================== */
 
 h1,
@@ -102,7 +108,7 @@ h2 {
 }
 
 /* ==========================
-   HERO
+HERO
 ========================== */
 
 .hero {
@@ -121,7 +127,7 @@ h2 {
     padding: 18px;
     text-align: center;
     color: var(--cor-clara);
-    background-color: rgba(11, 79, 108, 0.80);
+    background-color: var(--fundo-transparente);
 }
 
 .hero article {
@@ -130,7 +136,7 @@ h2 {
     right: 40px;
     bottom: 30px;
     padding: 18px;
-    background-color: rgba(255, 255, 255, 0.90);
+    background-color: var(--branco-transparente);
 }
 
 .hero article img {
@@ -145,7 +151,7 @@ h2 {
 }
 
 /* ==========================
-   SEÇÕES
+SEÇÕES
 ========================== */
 
 section {
@@ -160,7 +166,7 @@ section p {
 }
 
 /* ==========================
-   GALERIA
+GALERIA
 ========================== */
 
 .galeria {
@@ -190,7 +196,7 @@ section p {
 }
 
 /* ==========================
-   FOOTER
+FOOTER
 ========================== */
 
 footer {
@@ -217,7 +223,7 @@ footer {
 }
 
 /* ==========================
-   RESPONSIVIDADE
+RESPONSIVIDADE
 ========================== */
 
 @media screen and (max-width: 900px) {
@@ -248,4 +254,5 @@ footer {
         flex-direction: column;
         gap: 20px;
     }
+
 }
