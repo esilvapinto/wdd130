@@ -196,7 +196,7 @@ section p {
 footer {
     margin-top: 30px;
     padding: 20px 0;
-    border-top: 1px solid #cccccc;
+    border-top: 3px solid var(--cor-destaque);
 
     display: flex;
     justify-content: space-between;
