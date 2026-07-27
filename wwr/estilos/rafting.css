@@ -3,6 +3,10 @@
    WDD130 - BYU
 ========================================== */
 
+/* ==========================
+   VARIÁVEIS
+========================== */
+
 :root {
     --cor-primaria: #0B4F6C;
     --cor-secundaria: #01BAEF;
@@ -15,7 +19,9 @@
     --fonte-corpo: Arial, Helvetica, sans-serif;
 }
 
-/* RESET */
+/* ==========================
+   RESET
+========================== */
 
 * {
     margin: 0;
@@ -23,15 +29,19 @@
     box-sizing: border-box;
 }
 
-/* BODY */
+/* ==========================
+   BODY
+========================== */
 
 body {
     font-family: var(--fonte-corpo);
-    background: var(--cor-fundo);
+    background-color: var(--cor-fundo);
     color: var(--cor-texto);
 }
 
-/* LAYOUT */
+/* ==========================
+   LAYOUT
+========================== */
 
 header,
 main,
@@ -40,21 +50,25 @@ footer {
     margin: 0 auto;
 }
 
-/* ================= HEADER ================= */
+/* ==========================
+   HEADER
+========================== */
 
 header {
     display: grid;
     grid-template-columns: 180px 1fr;
     align-items: center;
     padding: 20px;
-    background: var(--cor-clara);
+    background-color: var(--cor-clara);
 }
 
 header img {
     width: 150px;
 }
 
-/* NAV */
+/* ==========================
+   NAVEGAÇÃO
+========================== */
 
 nav {
     display: flex;
@@ -69,10 +83,12 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--cor-destaque);
+    color: var(--cor-secundaria);
 }
 
-/* ================= TITLES ================= */
+/* ==========================
+   TÍTULOS
+========================== */
 
 h1,
 h2 {
@@ -85,7 +101,9 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* ================= HERO ================= */
+/* ==========================
+   HERO
+========================== */
 
 .hero {
     position: relative;
@@ -100,36 +118,25 @@ h2 {
     position: absolute;
     top: 20px;
     width: 100%;
-
     padding: 18px;
-
     text-align: center;
-    color: white;
-
-    background: rgba(11, 79, 108, .80);
+    color: var(--cor-clara);
+    background-color: rgba(11, 79, 108, 0.80);
 }
 
 .hero article {
-
     position: absolute;
-
     left: 40px;
     right: 40px;
     bottom: 30px;
-
-    background: rgba(255, 255, 255, .90);
-
     padding: 18px;
+    background-color: rgba(255, 255, 255, 0.90);
 }
 
 .hero article img {
-
     float: right;
-
     width: 130px;
-
     margin-left: 20px;
-
     border: 2px solid var(--cor-primaria);
 }
 
@@ -137,157 +144,108 @@ h2 {
     line-height: 1.6;
 }
 
-/* ================= SECTIONS ================= */
+/* ==========================
+   SEÇÕES
+========================== */
 
 section {
-
-    background: white;
-
+    background-color: var(--cor-clara);
     margin-top: 30px;
-
     padding: 25px;
 }
 
 section p {
-
     line-height: 1.7;
-
     text-align: justify;
 }
 
-/* ================= GALERIA ================= */
+/* ==========================
+   GALERIA
+========================== */
 
 .galeria {
-
     display: flex;
-
     justify-content: space-between;
-
     gap: 10px;
+    margin-top: 20px;
 }
 
 .galeria figure {
-
     flex: 1;
-
     text-align: center;
 }
 
 .galeria img {
-
     width: 100%;
-
     height: 120px;
-
     object-fit: cover;
-
-    border: 2px solid var(--cor-primaria);
+    border: 2px solid var(--cor-secundaria);
 }
 
 .galeria figcaption {
-
     margin-top: 8px;
-
     font-size: .9rem;
-
     font-weight: bold;
-
     color: var(--cor-primaria);
 }
 
-/* ================= FOOTER ================= */
+/* ==========================
+   FOOTER
+========================== */
 
 footer {
-
     margin-top: 30px;
-
-    padding: 20px;
-
-    border-top: 1px solid #ccc;
+    padding: 20px 0;
+    border-top: 1px solid #cccccc;
 
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
 }
 
-footer p {
-
-    color: var(--cor-texto);
-}
-
-.redes-sociais {
-
+.socialmedia {
     display: flex;
-
     gap: 15px;
 }
 
-.redes-sociais a {
-
+.socialmedia a {
     text-decoration: none;
 }
 
-.redes-sociais img {
-
-    width: 40px;
+.socialmedia img {
+    width: 35px;
 }
 
-/* ================= RESPONSIVO ================= */
+/* ==========================
+   RESPONSIVIDADE
+========================== */
 
-@media (max-width:900px) {
+@media screen and (max-width: 900px) {
 
     header,
     main,
     footer {
-
-        width: 95%;
+        width: 90%;
     }
 
     header {
-
         grid-template-columns: 1fr;
-
-        justify-items: center;
-
-        gap: 20px;
+        text-align: center;
     }
 
     nav {
-
         justify-content: center;
-
         flex-wrap: wrap;
-    }
-
-    .hero article {
-
-        position: static;
-
         margin-top: 20px;
     }
 
-    .hero h1 {
-
-        position: static;
-    }
-
     .galeria {
-
         flex-wrap: wrap;
-    }
-
-    .galeria figure {
-
-        width: 45%;
-        flex: none;
+        justify-content: center;
     }
 
     footer {
-
         flex-direction: column;
-
         gap: 20px;
     }
 }
