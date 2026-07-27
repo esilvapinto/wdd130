@@ -1,15 +1,3 @@
-/*
-==========================================
-River Rush Adventures
-WDD130 - BYU
-Elias Silva Pinto
-==========================================
-*/
-
-/* ==========================
-VARIÁVEIS
-========================== */
-
 :root {
     --cor-primaria: #0B4F6C;
     --cor-secundaria: #01BAEF;
@@ -18,17 +6,11 @@ VARIÁVEIS
     --cor-fundo: #F4F4F4;
     --cor-texto: #333333;
     --cor-borda: #CCCCCC;
-
-    --fundo-transparente: rgba(11, 79, 108, 0.80);
-    --branco-transparente: rgba(255, 255, 255, 0.90);
-
+    --fundo-transparente: rgba(11, 79, 108, .80);
+    --branco-transparente: rgba(255, 255, 255, .90);
     --fonte-titulo: Georgia, serif;
     --fonte-corpo: Arial, Helvetica, sans-serif;
 }
-
-/* ==========================
-RESET
-========================== */
 
 * {
     margin: 0;
@@ -36,19 +18,11 @@ RESET
     box-sizing: border-box;
 }
 
-/* ==========================
-BODY
-========================== */
-
 body {
     font-family: var(--fonte-corpo);
-    background-color: var(--cor-fundo);
+    background: var(--cor-fundo);
     color: var(--cor-texto);
 }
-
-/* ==========================
-LAYOUT
-========================== */
 
 header,
 main,
@@ -57,25 +31,17 @@ footer {
     margin: 0 auto;
 }
 
-/* ==========================
-HEADER
-========================== */
-
 header {
     display: grid;
     grid-template-columns: 180px 1fr;
     align-items: center;
     padding: 20px;
-    background-color: var(--cor-clara);
+    background: var(--cor-clara);
 }
 
 header img {
     width: 150px;
 }
-
-/* ==========================
-NAVEGAÇÃO
-========================== */
 
 nav {
     display: flex;
@@ -93,10 +59,6 @@ nav a:hover {
     color: var(--cor-secundaria);
 }
 
-/* ==========================
-TÍTULOS
-========================== */
-
 h1,
 h2 {
     font-family: var(--fonte-titulo);
@@ -107,10 +69,6 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
 }
-
-/* ==========================
-HERO
-========================== */
 
 .hero {
     position: relative;
@@ -128,7 +86,7 @@ HERO
     padding: 18px;
     text-align: center;
     color: var(--cor-clara);
-    background-color: var(--fundo-transparente);
+    background: var(--fundo-transparente);
 }
 
 .hero article {
@@ -137,7 +95,7 @@ HERO
     right: 40px;
     bottom: 30px;
     padding: 18px;
-    background-color: var(--branco-transparente);
+    background: var(--branco-transparente);
 }
 
 .hero article img {
@@ -151,12 +109,8 @@ HERO
     line-height: 1.6;
 }
 
-/* ==========================
-SEÇÕES
-========================== */
-
 section {
-    background-color: var(--cor-clara);
+    background: var(--cor-clara);
     margin-top: 30px;
     padding: 25px;
 }
@@ -165,10 +119,6 @@ section p {
     line-height: 1.7;
     text-align: justify;
 }
-
-/* ==========================
-GALERIA
-========================== */
 
 .galeria {
     display: flex;
@@ -196,15 +146,10 @@ GALERIA
     color: var(--cor-primaria);
 }
 
-/* ==========================
-FOOTER
-========================== */
-
 footer {
     margin-top: 30px;
     padding: 20px 0;
     border-top: 3px solid var(--cor-destaque);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -223,11 +168,7 @@ footer {
     width: 35px;
 }
 
-/* ==========================
-RESPONSIVIDADE
-======================== */
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width:900px) {
 
     header,
     main,
@@ -255,5 +196,4 @@ RESPONSIVIDADE
         flex-direction: column;
         gap: 20px;
     }
-
 }

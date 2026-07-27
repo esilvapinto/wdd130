@@ -1,107 +1,17 @@
-/* Global resets */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    color: #222;
-    background: #fff;
-    padding: 20px;
-    /* Adiciona respiro geral na página */
-}
-
-nav {
-    background-color: steelblue;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-nav a {
-    color: white;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-}
-
-main {
-    max-width: 840px;
-    margin: 0 auto;
-    /* Centraliza o conteúdo */
-}
-
-h1 {
-    color: steelblue;
-    margin-bottom: 1rem;
-}
-
-main img {
-    float: right;
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    margin-left: 20px;
-    /* Afasta o texto da imagem */
-    margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 1rem;
-}
-
-/* Ajustes para a lista */
-ul {
-    margin-left: 2rem;
-    /* Afasta da margem esquerda */
-    padding-left: 1rem;
-    margin-bottom: 1rem;
-}
-
-ul li {
-    margin-bottom: 0.5rem;
-    /* Separa os itens da lista */
-}
-
-aside {
-    width: 20em;
-    text-align: center;
-    position: relative;
-    margin: 20px auto;
-    /* Centraliza o aside */
-}
-
-aside h2 {
-    position: absolute;
-    top: 47px;
-    left: 150px;
-    background: rgba(255, 255, 255, 0.7);
-    /* Adiciona fundo para leitura */
-    padding: 5px;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-footer {
-    margin-top: 2em;
-    border-top: 1px solid #000;
-    text-align: center;
-    padding-top: 10px;
-}
-
-/* Seletores de Classe */
-.caixa {
-    margin: 1rem 0;
-    /* Margem superior e inferior, 0 nas laterais */
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1.5rem;
-    background-color: #ddd;
-    color: #000;
-}
+< !DOCTYPE html > <html lang="pt-BR" > <head > <meta charset="UTF-8" > <meta name="viewport" content="width=device-width, initial-scale=1.0" > <title > Sobre Nós | River Rush Adventures</title > <meta name="description"
+content="Conheça a história da River Rush Adventures e descubra nossa paixão por aventura, segurança e contato com a natureza." > <meta name="author" content="Elias Pinto" > <link rel="stylesheet" href="estilos/rafting.css" > </head > <body > <header > <img src="imagens/z-raftingcompas.png" alt="Logotipo River Rush Adventures" > <nav > <a href="index.html" > Página Inicial</a > <a href="sobre.html" > Sobre Nós</a > <a href="passeios.html" > Passeios</a > <a href="contato.html" > Fale Conosco</a > </nav > </header > <main > <div class="hero" > <img src="imagens/rafting10_1024.jpg" alt="Grupo praticando rafting nas corredeiras" > <h1 > River Rush Adventures</h1 > <article > <img src="imagens/rafting47_600.jpg"
+alt="Clientes durante uma aventura de rafting" > <p > Nossa missão é proporcionar experiências inesquecíveis,
+combinando aventura,
+segurança e respeito à natureza. Cada descida é conduzida por guias experientes para garantir diversão,
+emoção e tranquilidade aos nossos visitantes. </p > </article > </div > <section > <h2 > História</h2 > <p > A River Rush Adventures nasceu do sonho de compartilhar a emoção do rafting com pessoas de todas as idades. Desde o início,
+nosso compromisso sempre foi oferecer passeios seguros,
+emocionantes e conduzidos por profissionais experientes,
+promovendo o contato direto com a natureza e a preservação dos rios. </p > </section > <section > <h2 > A aventura está te esperando !</h2 > <div class="galeria" > <figure > <img src="imagens/rafting47_600.jpg"
+alt="Salto do Rio Negro" > <figcaption > Salto do Rio Negro</figcaption > </figure > <figure > <img src="imagens/rafting53_600.jpg"
+alt="Rio Jacaré" > <figcaption > Rio Jacaré</figcaption > </figure > <figure > <img src="imagens/rafting56_600.jpg"
+alt="Vale das Águas" > <figcaption > Vale das Águas</figcaption > </figure > <figure > <img src="imagens/rafting15_1024-2.jpg"
+alt="Expedição nas Corredeiras" > <figcaption > Expedição nas Corredeiras</figcaption > </figure > <figure > <img src="imagens/rafting16_1024.jpg"
+alt="Corredeira do Horizonte" > <figcaption > Corredeira do Horizonte</figcaption > </figure > </div > </section > </main > <footer > <p > © 2026 River Rush Adventures | Elias Pinto </p > <nav class="redes-sociais" > <a href="https://facebook.com" > <img src="imagens/facebook-square.jpg"
+alt="Página do Facebook da River Rush Adventures" > </a > <a href="https://instagram.com" > <img src="imagens/instagram-square.jpg"
+alt="Perfil do Instagram da River Rush Adventures" > </a > <a href="https://linkedin.com" > <img src="imagens/linkedin-square.jpg"
+alt="Perfil do LinkedIn da River Rush Adventures" > </a > </nav > </footer > </body > </html >
