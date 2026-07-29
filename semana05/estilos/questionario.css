@@ -1,0 +1,85 @@
+/* Configurações globais e layout de coluna única */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+/* Organização de cada grupo de formulário em coluna única */
+.form-grupo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: ##004080;
+}
+
+/* Estilização uniforme para inputs, textarea e select */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    padding: 10px;
+    border: : 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #004080;
+    outline: none;
+}
+
+/* Botão de envio centralizado e estilizado */
+.form-botao {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button[type="submit"] {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #00264d;
+}

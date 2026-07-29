@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário de HTML e CSS</title>
+    <meta name="description" content="Formulário Questionário de HTML e CSS.">
+
+    <meta name="author" content="Elias Silva Pinto">
+    <!-- Vinculando o arquivo CSS na pasta estilos -->
+    <link rel="stylesheet" href="estilos/questionario.css">
+</head>
+
+<body>
+    <main>
+        <h1>Questionário de Avaliação: HTML e CSS</h1>
+
+        <form action="#" method="post">
+
+            <!-- Pergunta 1: Tipo text (Preencher a lacuna) -->
+            <div class="form-grupo">
+                <label for="q1">1. Qual tag HTML é usada para criar o maior título de
+                    cabeçalho?</label>
+                <input type="text" id="q1" name="q1" required
+                  placeholder="Digite sua resposta aqui...">
+            </div>
+
+            <!-- Pergunta 2: Elemento textarea (Resposta curta) -->
+            <div class="form-grupo">
+                <label for="q2">2. Explique brevemente qual é a principal utilidade do CSS em uma
+                    página web.</label>
+                <textarea id="q2" name="q2" rows="4" required
+                  placeholder="Escreva sua resposta..."></textarea>
+            </div>
+
+            <!-- Pergunta 3: Elemento select (Caixa suspensa / Combobox) -->
+            <div class="form-grupo">
+                <label for="q3">3. Qual propriedade CSS é utilizada para alterar a cor do
+                    texto?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Escolha uma...</option>
+                    <option value="background-color">background-color</option>
+                    <option value="color">color</option>
+                    <option value="font-size">font-size</option>
+                </select>
+            </div>
+
+            <!-- Pergunta 4: Elemento de entrada tipo number -->
+            <div class="form-grupo">
+                <label for="q4">4. Quantas propriedades principais compõem o modelo de caixa (Box
+                    Model) básico do CSS para espaçamento e bordas? (Digite um número)</label>
+                <input type="number" id="q4" name="q4" min="1" max="10" required>
+            </div>
+
+            <!-- Botão de Envio -->
+            <div class="form-botao">
+                <button type="submit">Enviar Questionário</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>
