@@ -13,15 +13,11 @@
     --fonte-corpo: Arial, Helvetica, sans-serif;
 }
 
-/* RESET */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* BODY */
 
 body {
     font-family: var(--fonte-corpo);
@@ -29,16 +25,12 @@ body {
     color: var(--cor-texto);
 }
 
-/* LAYOUT */
-
 header,
 main,
 footer {
     width: 840px;
     margin: 0 auto;
 }
-
-/* HEADER */
 
 header {
     display: grid;
@@ -51,8 +43,6 @@ header {
 header img {
     width: 150px;
 }
-
-/* NAVEGAÇÃO */
 
 nav {
     display: flex;
@@ -70,8 +60,6 @@ nav a:hover {
     color: var(--cor-secundaria);
 }
 
-/* TÍTULOS */
-
 h1,
 h2 {
     font-family: var(--fonte-titulo);
@@ -82,8 +70,6 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
 }
-
-/* HERO */
 
 .hero {
     position: relative;
@@ -124,8 +110,6 @@ h2 {
     line-height: 1.6;
 }
 
-/* SEÇÕES */
-
 section {
     background-color: var(--cor-clara);
     margin-top: 30px;
@@ -136,8 +120,6 @@ section p {
     line-height: 1.7;
     text-align: justify;
 }
-
-/* GALERIA */
 
 .galeria {
     display: flex;
@@ -165,8 +147,6 @@ section p {
     color: var(--cor-primaria);
 }
 
-/* RODAPÉ */
-
 footer {
     margin-top: 30px;
     padding: 20px 0;
@@ -189,8 +169,6 @@ footer {
 .redes-sociais img {
     width: 35px;
 }
-
-/* RESPONSIVIDADE */
 
 @media screen and (max-width: 900px) {
 
