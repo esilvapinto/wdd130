@@ -1,15 +1,19 @@
-# Elias Silva Pinto #:root {
+:root {
     --cor-primaria: #0B4F6C;
     --cor-secundaria: #01BAEF;
     --cor-destaque: #20BF55;
     --cor-clara: #FFFFFF;
     --cor-fundo: #F4F4F4;
     --cor-texto: #333333;
-    --fundo-transparente: rgba(11, 79, 108, .80);
-    --branco-transparente: rgba(255, 255, 255, .90);
+
+    --fundo-transparente: rgba(11, 79, 108, 0.80);
+    --branco-transparente: rgba(255, 255, 255, 0.90);
+
     --fonte-titulo: Georgia, serif;
     --fonte-corpo: Arial, Helvetica, sans-serif;
 }
+
+/* RESET */
 
 * {
     margin: 0;
@@ -17,11 +21,15 @@
     box-sizing: border-box;
 }
 
+/* BODY */
+
 body {
     font-family: var(--fonte-corpo);
-    background: var(--cor-fundo);
+    background-color: var(--cor-fundo);
     color: var(--cor-texto);
 }
+
+/* LAYOUT */
 
 header,
 main,
@@ -30,17 +38,21 @@ footer {
     margin: 0 auto;
 }
 
+/* HEADER */
+
 header {
     display: grid;
     grid-template-columns: 180px 1fr;
     align-items: center;
     padding: 20px;
-    background: var(--cor-clara);
+    background-color: var(--cor-clara);
 }
 
 header img {
     width: 150px;
 }
+
+/* NAVEGAÇÃO */
 
 nav {
     display: flex;
@@ -58,6 +70,8 @@ nav a:hover {
     color: var(--cor-secundaria);
 }
 
+/* TÍTULOS */
+
 h1,
 h2 {
     font-family: var(--fonte-titulo);
@@ -68,6 +82,8 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+
+/* HERO */
 
 .hero {
     position: relative;
@@ -85,7 +101,7 @@ h2 {
     padding: 18px;
     text-align: center;
     color: var(--cor-clara);
-    background: var(--fundo-transparente);
+    background-color: var(--fundo-transparente);
 }
 
 .hero article {
@@ -94,7 +110,7 @@ h2 {
     right: 40px;
     bottom: 30px;
     padding: 18px;
-    background: var(--branco-transparente);
+    background-color: var(--branco-transparente);
 }
 
 .hero article img {
@@ -108,8 +124,10 @@ h2 {
     line-height: 1.6;
 }
 
+/* SEÇÕES */
+
 section {
-    background: var(--cor-clara);
+    background-color: var(--cor-clara);
     margin-top: 30px;
     padding: 25px;
 }
@@ -118,6 +136,8 @@ section p {
     line-height: 1.7;
     text-align: justify;
 }
+
+/* GALERIA */
 
 .galeria {
     display: flex;
@@ -140,15 +160,18 @@ section p {
 
 .galeria figcaption {
     margin-top: 8px;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: bold;
     color: var(--cor-primaria);
 }
+
+/* RODAPÉ */
 
 footer {
     margin-top: 30px;
     padding: 20px 0;
     border-top: 3px solid var(--cor-destaque);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -167,7 +190,9 @@ footer {
     width: 35px;
 }
 
-@media screen and (max-width:900px) {
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 900px) {
 
     header,
     main,
