@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Usuários</title>
+    <meta name="description" content="Pesquisa de Usuários.">
+    <meta name="author" content="Elias Silva Pinto">
+
+    <!-- Link de referência ao arquivo CSS -->
+    <link rel="stylesheet" href="estilos/formulario-pesquisa.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pesquisa de Usuários</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+
+                <!-- Nome Completo (coluna2) -->
+                <div class="item-formulario coluna2">
+                    <label for="nomecompleto">Nome Completo:</label>
+                    <input type="text" id="nomecompleto" name="nomecompleto" required>
+                </div>
+
+                <!-- E-mail (coluna2) -->
+                <div class="item-formulario coluna2">
+                    <label for="emaildousuario">E-mail:</label>
+                    <input type="email" id="emaildousuario" name="emaildousuario" required>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências e Experiência</legend>
+
+                <!-- Navegador (coluna1) -->
+                <div class="item-formulario coluna1">
+                    <label for="navegador">Qual navegador você mais usa?</label>
+                    <select id="navegador" name="navegador">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                    </select>
+                </div>
+
+                <!-- Animal de estimação / Checkbox (coluna1) -->
+                <div class="item-formulario coluna1">
+                    <label for="pet">Você tem animal de estimação?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+
+                <!-- Lugares onde morou / Textarea -->
+                <div class="item-formulario">
+                    <label for="lugares">Descreva os lugares onde já morou:</label>
+                    <textarea id="lugares" name="lugares" rows="4"></textarea>
+                </div>
+
+            </fieldset>
+
+            <!-- Botão de Envio -->
+            <button type="submit">Enviar Pesquisa</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - WDD 130 - Pesquisa de Usuários</p>
+    </footer>
+</body>
+
+</html>
