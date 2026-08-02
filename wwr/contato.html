@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sobre Nós | River Rush Adventures</title>
+    <title>Fale Conosco | River Rush Adventures</title>
 
     <meta name="description"
-      content="Conheça a história da River Rush Adventures e descubra nossa paixão por aventura, segurança e natureza.">
+      content="Entre em contato com a River Rush Adventures. Tire suas dúvidas sobre reservas, envie sugestões ou fale diretamente com nossa equipe de suporte.">
 
     <meta name="author" content="Elias Silva Pinto">
 
@@ -32,74 +32,94 @@
 
     <main>
 
-        <div class="hero">
+        <!-- Informações e Cabeçalho de Contato -->
+        <section class="contact-hero">
+            <h1>Companhia de Rafting em Corredeiras</h1>
+            <p>123 Rua Principal do Rio<br>
+                Foz do Iguaçu, Paraná<br>
+                +55 45 99999-9999<br>
+                info@correiras.com</p>
+        </section>
 
-            <img src="imagens/rafting10_1024.jpg" alt="Grupo praticando rafting nas corredeiras">
+        <!-- Grid com Mapa e Formulário -->
+        <section class="contact-grid">
 
-            <h1>River Rush Adventures</h1>
+            <!-- Mapa do Google incorporado -->
+            <div class="map-box">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.298285511874!2d-54.58557!3d-25.54778!2m3!1f0!2f0!3f0!3m2!1f1024!2f768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCszMnMjguMCJTIDM0wrAzNSdDAzguMCJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
+                  allowfullscreen="" loading="lazy"></iframe>
+            </div>
 
-            <article>
+            <!-- Formulário de Contato -->
+            <div class="form-box">
+                <form action="#" method="post" class="contact-form">
 
-                <img src="imagens/rafting47_600.jpg" alt="Clientes durante uma aventura de rafting">
+                    <div>
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Digite aqui" required>
+                    </div>
 
-                <p>
-                    Nossa missão é proporcionar experiências inesquecíveis,
-                    combinando aventura, segurança e respeito à natureza.
-                    Cada descida é conduzida por guias experientes para garantir
-                    diversão, emoção e total segurança aos nossos visitantes.
-                </p>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite aqui"
+                          required>
+                    </div>
 
-            </article>
+                    <fieldset class="radio-group">
+                        <legend>Propósito da Mensagem</legend>
+                        <div class="radio-options">
+                            <label>
+                                <input type="radio" name="purpose" value="Dúvida Geral" checked>
+                                Dúvida Geral
+                            </label>
+                            <label>
+                                <input type="radio" name="purpose" value="Pergunta sobre Reserva">
+                                Pergunta sobre Reserva
+                            </label>
+                            <label>
+                                <input type="radio" name="purpose" value="Sugestão"> Sugestão
+                            </label>
+                        </div>
+                    </fieldset>
 
-        </div>
+                    <div>
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Digite aqui"
+                          required></textarea>
+                    </div>
 
-        <section>
+                    <div>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" id="newsletter"> Por favor, me
+                            inscreva na newsletter mensal
+                        </label>
+                    </div>
 
-            <h2>História</h2>
+                    <button type="submit" class="submit-btn">Entrar em Contato!</button>
 
-            <p>
-                A River Rush Adventures nasceu do sonho de compartilhar a emoção
-                das corredeiras com pessoas que amam natureza, aventura e trabalho
-                em equipe. Desde o início, nosso compromisso sempre foi oferecer
-                passeios seguros, inesquecíveis e conduzidos por profissionais
-                altamente capacitados.
-            </p>
+                </form>
+            </div>
 
         </section>
 
-        <section>
-
-            <h2>A aventura está te esperando!</h2>
-
-            <div class="galeria">
-
+        <!-- Seção de Funcionários (Equipe) -->
+        <section class="team-section">
+            <h2>Estamos Aqui para Serví-lo</h2>
+            <div class="team-grid">
                 <figure>
-                    <img src="imagens/rafting14_1024.jpg" alt="Salto do Rio Negro">
-                    <figcaption>Salto do Rio Negro</figcaption>
+                    <img src="imagens/rafting47_600.jpg" alt="Perfil do Funcionário Carlos">
+                    <figcaption>Carlos - Guia Chefe</figcaption>
                 </figure>
-
                 <figure>
-                    <img src="imagens/rafting15_1024-2.jpg" alt="Corredeira do Rio Paraná">
-                    <figcaption>Rio Paraná</figcaption>
+                    <img src="imagens/rafting53_600.jpg" alt="Perfil do Funcionário Ana">
+                    <figcaption>Ana - Instrutora</figcaption>
                 </figure>
-
                 <figure>
-                    <img src="imagens/rafting16_1024.jpg" alt="Corredeira do Rio Jacaré">
-                    <figcaption>Rio Jacaré</figcaption>
+                    <img src="imagens/rafting56_600.jpg" alt="Perfil do Funcionário Marcos">
+                    <figcaption>Marcos - Reservas</figcaption>
                 </figure>
-
-                <figure>
-                    <img src="imagens/rafting53_600.jpg" alt="Expedição Rio Verde">
-                    <figcaption>Rio Verde</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="imagens/rafting56_600.jpg" alt="Expedição Rio das Antas">
-                    <figcaption>Rio das Antas</figcaption>
-                </figure>
-
             </div>
-
         </section>
 
     </main>
@@ -108,23 +128,16 @@
 
         <p>© 2026 River Rush Adventures | Elias Silva Pinto</p>
 
-        <nav class="socialmedia">
-
+        <nav class="redes-sociais">
             <a href="https://facebook.com">
-                <img src="imagens/facebook-square.jpg"
-                  alt="Página do Facebook da River Rush Adventures">
+                <img src="imagens/facebook-square.jpg" alt="Facebook">
             </a>
-
             <a href="https://instagram.com">
-                <img src="imagens/instagram-square.jpg"
-                  alt="Perfil do Instagram da River Rush Adventures">
+                <img src="imagens/instagram-square.jpg" alt="Instagram">
             </a>
-
             <a href="https://linkedin.com">
-                <img src="imagens/linkedin-square.jpg"
-                  alt="Perfil do LinkedIn da River Rush Adventures">
+                <img src="imagens/linkedin-square.jpg" alt="LinkedIn">
             </a>
-
         </nav>
 
     </footer>
