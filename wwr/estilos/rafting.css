@@ -1,17 +1,161 @@
+/* --- Ajustes específicos para a página Fale Conosco conforme Wireframe --- */
+
+.company-info-box {
+    text-align: center;
+    background-color: var(--cor-clara);
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.company-info-box h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.company-info-box p {
+    line-height: 1.5;
+    text-align: center;
+    color: var(--cor-texto);
+}
+
+/* Grid principal: Mapa e Formulário lado a lado */
+.contact-grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: var(--cor-clara);
+    margin-top: 30px;
+    padding: 25px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border: none;
+    display: block;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--cor-texto);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--fonte-corpo);
+}
+
+.radio-fieldset {
+    border: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.radio-fieldset legend {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: var(--cor-texto);
+}
+
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.radio-options label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox-row label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
 .submit-btn {
     background-color: var(--cor-primaria);
     color: var(--cor-clara);
-    padding: 12px;
+    padding: 10px;
     border: none;
     border-radius: 4px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    text-align: center;
+    transition: background-color 0.3s;
 }
 
 .submit-btn:hover {
     background-color: var(--cor-secundaria);
     color: var(--cor-clara);
+}
+
+/* Seção dos funcionários com moldura e título idênticos ao wireframe */
+.employee-box-section {
+    background-color: var(--cor-clara);
+    margin-top: 30px;
+    padding: 25px;
+    border: 2px solid #ccc;
+}
+
+.employee-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.employee-grid figure {
+    flex: 1;
+    text-align: center;
+}
+
+.employee-grid img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.employee-grid figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: var(--cor-texto);
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 900px) {
+    .contact-grid-section {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-grid {
+        flex-direction: column;
+    }
 }

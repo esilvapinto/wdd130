@@ -18,55 +18,50 @@
 <body>
 
     <header>
-
         <img src="imagens/z-raftingcompas.png" alt="Logotipo River Rush Adventures">
-
         <nav>
             <a href="index.html">Página Inicial</a>
             <a href="sobre.html">Sobre Nós</a>
             <a href="passeios.html">Passeios</a>
             <a href="contato.html">Fale Conosco</a>
         </nav>
-
     </header>
 
     <main>
 
-        <!-- Informações e Cabeçalho de Contato -->
-        <section class="contact-hero">
-            <h1>River Rush Adventures - Companhia de Rafting em Corredeiras</h1>
-            <p>123 Rua Principal do Rio<br>
-                Foz do Iguaçu, Paraná<br>
-                +55 45 99999-9999<br>
-                info@correiras.com</p>
+        <!-- Informações da Empresa (Conforme wireframe: topo da página principal) -->
+        <section class="company-info-box">
+            <h1>Companhia de Rafting em Corredeiras</h1>
+            <p>123 Rua Principal do Rio</p>
+            <p>Foz do Iguaçu, Paraná</p>
+            <p>+55 45 99999-9999</p>
+            <p>info@correiras.com</p>
         </section>
 
-        <!-- Grid com Mapa e Formulário -->
-        <section class="contact-grid">
+        <!-- Grid do wireframe: Mapa à esquerda e Formulário à direita -->
+        <section class="contact-grid-section">
 
-            <!-- Mapa do Google incorporado -->
-            <div class="map-box">
+            <div class="map-container">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.298285511874!2d-54.58557!3d-25.54778!2m3!1f0!2f0!3f0!3m2!1f1024!2f768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCszMnMjguMCJTIDM0wrAzNSdDAzguMCJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
                   allowfullscreen="" loading="lazy"></iframe>
             </div>
 
-            <!-- Formulário de Contato -->
-            <div class="form-box">
+            <div class="form-container">
                 <form action="#" method="post" class="contact-form">
 
-                    <div>
+                    <div class="form-row">
                         <label for="name">Nome</label>
                         <input type="text" id="name" name="name" placeholder="Digite aqui" required>
                     </div>
 
-                    <div>
+                    <div class="form-row">
                         <label for="email">E-mail</label>
                         <input type="email" id="email" name="email" placeholder="Digite aqui"
                           required>
                     </div>
 
-                    <fieldset class="radio-group">
+                    <fieldset class="radio-fieldset">
                         <legend>Propósito da Mensagem</legend>
                         <div class="radio-options">
                             <label for="consulta">
@@ -84,14 +79,14 @@
                         </div>
                     </fieldset>
 
-                    <div>
+                    <div class="form-row">
                         <label for="message">Mensagem</label>
                         <textarea id="message" name="message" rows="4" placeholder="Digite aqui"
                           required></textarea>
                     </div>
 
-                    <div>
-                        <label class="checkbox-label" for="newsletter">
+                    <div class="checkbox-row">
+                        <label for="newsletter">
                             <input type="checkbox" name="newsletter" id="newsletter"> Por favor, me
                             inscreva na newsletter mensal
                         </label>
@@ -104,21 +99,21 @@
 
         </section>
 
-        <!-- Seção de Funcionários (Equipe) -->
-        <section class="team-section">
+        <!-- Seção de Funcionários com borda e título "Estamos Aqui para Serví-lo" -->
+        <section class="employee-box-section">
             <h2>Estamos Aqui para Serví-lo</h2>
-            <div class="team-grid">
+            <div class="employee-grid">
                 <figure>
                     <img src="imagens/rafting47_600.jpg" alt="Perfil do Funcionário Carlos">
-                    <figcaption>Carlos - Guia Chefe</figcaption>
+                    <figcaption>Perfil do Funcionário</figcaption>
                 </figure>
                 <figure>
                     <img src="imagens/rafting53_600.jpg" alt="Perfil do Funcionário Ana">
-                    <figcaption>Ana - Instrutora</figcaption>
+                    <figcaption>Perfil do Funcionário</figcaption>
                 </figure>
                 <figure>
                     <img src="imagens/rafting56_600.jpg" alt="Perfil do Funcionário Marcos">
-                    <figcaption>Marcos - Reservas</figcaption>
+                    <figcaption>Perfil do Funcionário</figcaption>
                 </figure>
             </div>
         </section>
@@ -126,9 +121,7 @@
     </main>
 
     <footer>
-
         <p>© 2026 River Rush Adventures | Elias Silva Pinto</p>
-
         <nav class="redes-sociais">
             <a href="https://facebook.com">
                 <img src="imagens/facebook-square.jpg" alt="Facebook">
@@ -140,7 +133,6 @@
                 <img src="imagens/linkedin-square.jpg" alt="LinkedIn">
             </a>
         </nav>
-
     </footer>
 
 </body>
