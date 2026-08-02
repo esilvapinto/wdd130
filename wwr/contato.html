@@ -69,16 +69,17 @@
                     <fieldset class="radio-group">
                         <legend>Propósito da Mensagem</legend>
                         <div class="radio-options">
-                            <label>
-                                <input type="radio" name="purpose" value="Dúvida Geral" checked>
-                                Dúvida Geral
+                            <label for="consulta">
+                                <input type="radio" id="consulta" name="purpose"
+                                  value="Dúvida Geral" checked> Dúvida Geral
                             </label>
-                            <label>
-                                <input type="radio" name="purpose" value="Pergunta sobre Reserva">
-                                Pergunta sobre Reserva
+                            <label for="reserva">
+                                <input type="radio" id="reserva" name="purpose"
+                                  value="Pergunta sobre Reserva"> Pergunta sobre Reserva
                             </label>
-                            <label>
-                                <input type="radio" name="purpose" value="Sugestão"> Sugestão
+                            <label for="sugestao">
+                                <input type="radio" id="sugestao" name="purpose" value="Sugestão">
+                                Sugestão
                             </label>
                         </div>
                     </fieldset>
@@ -90,7 +91,7 @@
                     </div>
 
                     <div>
-                        <label class="checkbox-label">
+                        <label class="checkbox-label" for="newsletter">
                             <input type="checkbox" name="newsletter" id="newsletter"> Por favor, me
                             inscreva na newsletter mensal
                         </label>
